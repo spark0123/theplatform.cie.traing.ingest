@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:media="http://search.yahoo.com/mrss/"
+ xmlns:pl="http://xml.theplatform.com/data/object"
+ xmlns:plingestmf="http://xml.theplatform.com/ingest/data/IngestMediaFile"
+ xmlns:plfile="http://xml.theplatform.com/media/data/MediaFile"
+ xmlns:plmedia="http://xml.theplatform.com/media/data/Media"
+ xmlns:customNS="http://customfield.sample.com">
+  <channel>
+   <item>
+    <pl:id>http://data.media2.theplatform.com/media/data/Media/536133807</pl:id>
+    <description>Updated Media item description</description>
+    <title>20thcenturyfox ateam trailer</title>
+    <media:copyright url="http://www.example.com">(c) Example 2016</media:copyright>
+    <media:keywords>Test</media:keywords>
+    <media:rating scheme="urn:mpaa">G</media:rating>
+
+    <!-- You can set categories by name using media:category -->
+    <media:category>Test</media:category>
+
+    <customNS:Genre>Trailer</customNS:Genre>
+
+    <plmedia:approved>true</plmedia:approved>
+    
+
+    <media:group>
+     <media:content expression="full" isDefault="true" lang="en" url="ftp://ftp-tam.sales.theplatform.com/SuePark/20thcenturyfox_ateam_trailer_720p_l.mp4">
+      <plfile:allowRelease>true</plfile:allowRelease>
+      <plfile:assetType>Animation</plfile:assetType>
+      <plfile:assetType>Movie</plfile:assetType>
+     </media:content>
+    </media:group>
+
+
+   </item>
+  </channel>
+</rss>

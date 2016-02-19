@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:media="http://search.yahoo.com/mrss/">
+  <xsl:output method="xml" indent="yes" />
+
+  <!-- Just copy everything to the output... -->
+  <xsl:template match="@* | node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@* | node()" />
+    </xsl:copy>
+  </xsl:template>
+
+  <!-- Except for the media:group element,
+which we'll catch and change to filter down to the highest bitrate MP4 -->
+
+  <xsl:template match="/rss/channel/item/media:group">
+    <media:group>
+      <xsl:for-each select="media:content[@type='video/mp4']">
+        <xsl:sort data-type="number" order="descending" select="@bitrate" />
+        <xsl:if test="position() = 1">
+          <xsl:copy-of select="." />
+        </xsl:if>
+      </xsl:for-each>
+    </media:group>
+  </xsl:template>
+</xsl:stylesheet>

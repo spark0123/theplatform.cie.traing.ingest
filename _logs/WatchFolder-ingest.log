@@ -1,0 +1,8 @@
+2016-02-18 00:28:38,632 sea1tpwfagt03.sea1.com http://watchfolder.ingest.theplatform.com/wf/data/WatchFolder/35922338 X task5.groovy_manifest [Error on Entertainment "http://data.media2.theplatform.com/media/data/Media/536133807"
+Exception on file "http://data.media2.theplatform.com/media/data/MediaFile/537157925": [com.theplatform.module.exception.ValidationException] The following asset types were not found: 'source'. Asset types need to be pre-defined in the media data service to be applied to media files.
+
+Exception on file "http://data.media2.theplatform.com/media/data/MediaFile/536645744": [com.theplatform.module.exception.ValidationException] The following asset types were not found: 'thumbnail'. Asset types need to be pre-defined in the media data service to be applied to media files.
+
+
+]
+2016-02-18 00:34:37,856 sea1tpwfagt03.sea1.com http://watchfolder.ingest.theplatform.com/wf/data/WatchFolder/35922338 - task5.groovy_manifest [successful]

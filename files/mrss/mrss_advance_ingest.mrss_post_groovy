@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:media="http://search.yahoo.com/mrss/"
+ xmlns:plingestmf="http://xml.theplatform.com/ingest/data/IngestMediaFile"
+ xmlns:plfile="http://xml.theplatform.com/media/data/MediaFile"
+ xmlns:plmedia="http://xml.theplatform.com/media/data/Media"
+ xmlns:customNS="http://customfield.sample.com">
+  <channel>
+   <item>
+    <ownerId>http://access.auth.theplatform.com/data/Account/2683723339</ownerId>
+    <description>Media item description.</description>
+    <title>Disney Prince of Persia Trailer</title>
+    <media:copyright url="http://www.example.com">(c) Example 2016</media:copyright>
+    <media:keywords>Test</media:keywords>
+    <media:rating scheme="urn:mpaa">G</media:rating>
+
+    <!-- You can set categories by name using media:category -->
+    <media:category>Test</media:category>
+
+    <customNS:Genre>Trailer</customNS:Genre>
+    
+    <plmedia:approved>true</plmedia:approved>
+    <dcterms:valid>start=2016-01-01T00:00:00Z;end=2017-01-01T00:00:00Z;scheme=W3C-DTF</dcterms:valid>
+    <media:group>
+     <media:content expression="full" isDefault="true" lang="en" url="disney_princeofpersia_trailer1_720p_n.mp4">
+      <plfile:allowRelease>true</plfile:allowRelease>
+      <plfile:assetType>Animation</plfile:assetType>
+      <plfile:assetType>Movie</plfile:assetType>
+     </media:content>
+    </media:group>
+    <media:thumbnail isDefault="true" height="60" width="60" url="shrekforeverposter_806x453.jpg">
+     <plfile:allowRelease>true</plfile:allowRelease>
+    </media:thumbnail>
+   </item>
+  </channel>
+</rss>

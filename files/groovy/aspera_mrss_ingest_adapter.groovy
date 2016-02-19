@@ -2,7 +2,9 @@ import com.theplatform.ingest.data.objects.WorkflowOption
 
 
 def capitalize(s) { s[0].toUpperCase() + s[1..-1].toLowerCase() }
-media.title = media.title.replace("_"," ")
+def replaced_title = media.title.replace("_"," ")
+media.title = replaced_title
+media.description = "description: " + media.title
 
  // Have the ingest service start a publish workflow after the files are ingested
 WorkflowOption wkflwOpt = new WorkflowOption()
